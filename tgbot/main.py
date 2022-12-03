@@ -23,7 +23,7 @@ def command_menu(message):
         bot.send_message(message.chat.id, f"{parsing.random_joke()}")
     elif message.text == "♌ Гороскоп":
         button = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
-        item1 = telebot.types.KeyboardButton('Нет')
+        item1 = telebot.types.KeyboardButton('Назад')
         item2 = telebot.types.KeyboardButton('Хочу❕')
         button.add(item1, item2)
         bot.send_message(message.chat.id, 'Точно хочешь?', reply_markup=button)
